@@ -1,0 +1,25 @@
+{% extends "incident/base.html" %}
+{% block content %}
+<form method='GET' action="{% url 'radio-test'%}">
+    <input name="q"><br/>
+<!--    {{form.NUMS}}-->
+    {% if checked %}
+        {% if checked == "test" %}
+            <input type="radio" value="test" name="r" checked="checked"><label>test</label><br/>
+        {% else %}
+            <input type="radio" value="test" name="r"><label>test</label><br/>
+        {% endif %}
+        {% if checked == "test1" %}
+            <input type="radio" value="test1" name="r" checked="checked"><label>test1</label><br/>
+        {% else %}
+            <input type="radio" value="test1" name="r"><label>test1</label><br/>
+        {% endif %}
+    {% else %}
+        <input type="radio" value="test" name="r" checked="checked"><label>test</label><br/>
+        <input type="radio" value="test1" name="r"><label>test1</label><br/>
+    {% endif %}
+    <button class="btn btn-outline-info" type="submit">
+        Submit
+    </button>
+</form>
+{% endblock content %}
