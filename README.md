@@ -1,1 +1,1 @@
-# IncidentLog
+This was the first commercial app i was paid to create. It is a basic report app for a daycare center. Using django i was able to create an easy to use application, in which staff can log on and report an incident if they need to. Once the report is made, it is emailed to the admin in csv form so they can process it as they wish.
